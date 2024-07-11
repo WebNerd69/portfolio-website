@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'integral-cf-bold';
+    src: url(Fontspring-DEMO-integralcf-bold.otf);
+}
+@font-face {
+    font-family: 'integral-cf-extraBold';
+    src: url(Fontspring-DEMO-integralcf-extraboldoblique.otf);
+}
+@font-face {
+    font-family: 'integral-cf-heavy';
+    src: url(Fontspring-DEMO-integralcf-heavy.otf);
+}
+
+@font-face {
+    font-family: 'fogie';
+    src: url(Fogie-Regular.ttf);
+}
+html,body{
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    background-color: hsl(0, 0%, 13%);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+}
+
+#circles1{
+    width: 30vw;
+    height: 30vw;
+    background-color: #520380;
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: .7;
+    z-index: 0;
+}
+#circles2{
+    width: 20vw;
+    height: 20vw;
+    background-color: #520380;
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: .7;
+    z-index: 0;
+}
+
+.nav{
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    /* background-color: aliceblue; */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.nav #items1{
+    background-image: url(/PERSONAL/portfolio-website/logo.png);
+    width: 3vw;
+    height: 3vw;
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+
+.nav #items2{
+    display: flex;
+    position: relative;
+    width: 20vw;
+    gap: 2vw;
+    
+
+}
+
+.navButton{
+    color: #F5CB5C;
+    opacity: .5;
+    transition: all .5s;
+    font-family: fogie;
+    letter-spacing: 1.5px;
+    font-size: .9vw;
+}
+
+.navButton:hover{
+    opacity: 1;
+}
