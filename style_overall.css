@@ -15,6 +15,32 @@
     font-family: 'fogie';
     src: url(Fogie-Regular.ttf);
 }
+
+@keyframes bandBujh {
+    0%{
+        opacity: .2;
+    }
+    40%{
+        opacity: .7;
+    }
+    80%{
+        opacity: .2;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
+@keyframes move {
+    0%{
+        left: 0;
+        bottom: -20%;
+    }
+    100%{
+        right: 0;
+        top: -20%;
+    }
+}
 html,body{
     box-sizing: border-box;
     text-decoration: none;
@@ -33,16 +59,17 @@ a{
 }
 
 #circles1{
-    width: 30vw;
-    height: 30vw;
+    width: 45vw;
+    height: 45vw;
     background-color: #520380;
     position: absolute;
-    top: -20%;
-    left: 20%;
+    top: -25%;
+    left: 15%;
     border-radius: 50%;
-    filter: blur(150px);
-    opacity: .7;
-    z-index: 0;
+    filter: blur(250px);
+    opacity: .5;
+    z-index: -1;
+    /* animation: bandBujh 8s ease-in-out 0s infinite forwards ; */
 }
 #circles2{
     width: 20vw;
@@ -54,7 +81,8 @@ a{
     border-radius: 50%;
     filter: blur(150px);
     opacity: .7;
-    z-index: 0;
+    z-index: -1;
+    /* animation: move 8s ease-in-out 0s infinite forwards ; */
 }
 
 .nav{
@@ -83,14 +111,13 @@ a{
     position: relative;
     width: 20vw;
     gap: 2vw;
-    
-
+    margin-right: 2vw;
 }
 
 .navButton{
     color: #F5CB5C;
     opacity: .5;
-    transition: all .5s;
+    transition: all .3s;
     font-family: fogie;
     letter-spacing: 1.5px;
     font-size: .9vw;
@@ -98,4 +125,48 @@ a{
 
 .navButton:hover{
     opacity: 1;
+}
+
+.foot{
+    /* background-color: rgb(0, 57, 107); */
+    z-index: 2;
+    position: absolute;
+    height: 15vh;
+    width: 100vw;
+    bottom: 2vh;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+#footItem1{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    gap: 1vh;
+    /* background-color: aqua; */
+    margin-left: 2vw;
+}
+
+#footItem1 a{
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+    transition: all .2s;
+}
+#footItem1 a:hover{
+    opacity: 1;
+}
+#footItem2{
+    margin-right: 2vw;
+}
+#footItem2 pre{
+    white-space: pre-line;
+    transform: rotate(270deg);
+    opacity: .3;
+    font-family: fogie;
+    font-size: .7vw;
+    letter-spacing: 1px;
 }
