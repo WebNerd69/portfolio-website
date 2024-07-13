@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'integral-cf-bold';
+    src: url(Fontspring-DEMO-integralcf-bold.otf);
+}
+@font-face {
+    font-family: 'integral-cf-extraBold';
+    src: url(Fontspring-DEMO-integralcf-extraboldoblique.otf);
+}
+@font-face {
+    font-family: 'integral-cf-heavy';
+    src: url(Fontspring-DEMO-integralcf-heavy.otf);
+}
+
+@font-face {
+    font-family: 'fogie';
+    src: url(Fogie-Regular.ttf);
+}
+
 html,body{
     box-sizing: border-box;
     text-decoration: none;
@@ -5,4 +23,54 @@ html,body{
     left: 0;
     top: 0;
     margin: 0;
+}
+
+#name2{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#name2 #line2{
+    position: relative;
+    font-family: integral-cf-bold;
+    font-size: 13vw;
+    color: #E4E4E4;
+    text-shadow: 0 0 250px #000000c8;
+}
+
+
+#line1{
+    position: absolute;
+    font-family: fogie;
+    color: #F5CB5C;
+    opacity: .5;
+    letter-spacing: 2px;
+    /* background-color: white; */
+    top: 35vh;
+    left: 35vw;
+    font-size: 1vw;
+}
+#line3{
+    position: absolute;
+    font-family: fogie;
+    color: #F5CB5C;
+    opacity: .5;
+    letter-spacing: 2px;
+    /* background-color: white; */
+    top: 66vh;
+    left: 55vw;
+    font-size: 1vw;
+}
+#line4{
+    position: absolute;
+    font-family: fogie;
+    color: #F5CB5C;
+    opacity: .5;
+    letter-spacing: 2px;
+    /* background-color: white; */
+    top: 70vh;
+    left: 55vw;
+    font-size: 1vw;
 }
