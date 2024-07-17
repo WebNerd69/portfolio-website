@@ -1,21 +1,20 @@
 @font-face {
     font-family: 'integral-cf-bold';
-    src: url(Fontspring-DEMO-integralcf-bold.otf);
+    src: url(/PERSONAL/portfolio-website/FONTS/Fontspring-DEMO-integralcf-bold.otf);
 }
 @font-face {
     font-family: 'integral-cf-extraBold';
-    src: url(Fontspring-DEMO-integralcf-extraboldoblique.otf);
+    src: url(/PERSONAL/portfolio-website/FONTS/Fontspring-DEMO-integralcf-extraboldoblique.otf);
 }
 @font-face {
     font-family: 'integral-cf-heavy';
-    src: url(Fontspring-DEMO-integralcf-heavy.otf);
+    src: url(/PERSONAL/portfolio-website/FONTS/Fontspring-DEMO-integralcf-heavy.otf);
 }
 
 @font-face {
     font-family: 'fogie';
-    src: url(Fogie-Regular.ttf);
+    src: url(/PERSONAL/portfolio-website/FONTS/Fogie-Regular.ttf);
 }
-
 @keyframes bandBujh {
     0%{
         opacity: .2;
@@ -99,7 +98,7 @@ a{
 }
 
 .nav #items1{
-    background-image: url(/PERSONAL/portfolio-website/logo.png);
+    background-image: url(/PERSONAL/portfolio-website/IMAGES/logo.png);
     width: 3vw;
     height: 3vw;
     background-size: cover;
