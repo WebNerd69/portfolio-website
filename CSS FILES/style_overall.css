@@ -109,9 +109,11 @@ a{
 .nav #items2{
     display: flex;
     position: relative;
-    width: 20vw;
+    width: 30vw;
     gap: 2vw;
     margin-right: 2vw;
+    justify-content: flex-end;
+    padding: 2vh;
 }
 
 .navButton{
